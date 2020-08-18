@@ -1,0 +1,19 @@
+{
+  "name": "serwis-kompa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lpikor/serwis-kompa.git"
+  },
+  "author": "Łukasz Pikor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lpikor/serwis-kompa/issues"
+  },
+  "homepage": "https://github.com/lpikor/serwis-kompa#readme"
+}

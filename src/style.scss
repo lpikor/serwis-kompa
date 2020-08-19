@@ -8,3 +8,158 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.nav {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Changa', sans-serif;
+    height: 80px;
+    width: 100%;
+    padding: 1rem;
+    background-color: #ffffff;
+    color: #01486b;
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        height: 65%;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &__list {
+        flex-grow: 1;
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__contact-info {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 30%;
+    }
+
+    &__contact {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &__contact-item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__contact-link {
+        margin-left: 1rem;
+    }
+
+    &__social-media {
+        flex-grow: 1;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+.nav--active {
+    height: 100vh;
+
+    & .nav {
+        &__list {
+            display: flex;
+        }
+
+        &__contact-info {
+            display: flex;
+        }
+    }
+}
+
+.logo {
+    width: 16rem;
+
+    &-container {
+        display: flex;
+    }
+
+    &-link {
+        display: flex;
+    }
+}
+
+@mixin hamburger-line() {
+    position: absolute;
+    height: 0.25rem;
+    width: 100%;
+    background-color: #01486b;
+    border-radius: 1rem;
+}
+
+.hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    border: none;
+
+    &__inner {
+        @include hamburger-line();
+        position: relative;
+    }
+
+    &__inner::before {
+        @include hamburger-line();
+        content: '';
+        bottom: .5rem;
+        left: 0;
+    }
+
+    &__inner::after {
+        @include hamburger-line();
+        content: '';
+        top: .5rem;
+        left: 0;
+    }
+}
+
+.hamburger--active {
+    & .hamburger {
+        &__inner {
+            background-color: transparent;
+        }
+
+        &__inner::before {
+            bottom: 0;
+            transform: rotate(45deg);
+        }
+
+        &__inner::after {
+            top: 0;
+            transform: rotate(-45deg);
+        }
+    }
+}

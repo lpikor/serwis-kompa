@@ -14,8 +14,19 @@ ul {
 }
 
 body {
-    font-family: 'Lato', sans-serif;
     background-color: #f7f6f6;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+}
+
+.btn {
+    padding: .5rem 2rem;
+    border-radius: 4px;
+
+    &--primary {
+        background-color: #01486b;
+        color: #ffffff;
+    }
 }
 
 .nav {
@@ -230,5 +241,27 @@ body {
         & .services__item-title {
             color: #007ebe;
         }
+    }
+}
+
+.statistics {
+    margin-top: 1rem;
+    
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 1rem;
+
+        &-value {
+            margin-top: 1rem;
+        }
+    }
+}
+
+.why-us {
+    &__btn {
+        display: inline-block;
+        margin-top: 2rem;
     }
 }

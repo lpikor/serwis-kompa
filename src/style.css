@@ -206,3 +206,10 @@ body {
     color: #ffffff; }
   .features__btn {
     margin-top: 2rem; }
+
+.contact-us {
+  padding: 2rem 1rem 2rem; }
+  .contact-us__address {
+    display: block; }
+  .contact-us__btn {
+    margin-top: 2rem; }

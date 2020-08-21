@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "scss": "node-sass src/scss -o dist/css --output-style compressed",
+    "autoprefixer": "postcss dist/css/ -u autoprefixer -r",
     "server": "cd dist && live-server"
   },
   "repository": {
@@ -21,6 +22,6 @@
     "autoprefixer": "^9.8.6",
     "live-server": "^1.2.1",
     "node-sass": "^4.14.1",
-    "postcss": "^7.0.32"
+    "postcss-cli": "^7.1.1"
   }
 }

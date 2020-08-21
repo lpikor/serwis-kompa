@@ -163,3 +163,21 @@ body {
         }
     }
 }
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-image: url('images/Banner-homepage.png');
+    color: #ffffff;
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50%;
+        margin-bottom: 1rem;
+    }
+}

@@ -120,3 +120,18 @@ body {
 .hamburger--active .hamburger__inner::after {
   top: 0;
   transform: rotate(-45deg); }
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background-image: url("images/Banner-homepage.png");
+  color: #ffffff; }
+  .banner__contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50%;
+    margin-bottom: 1rem; }

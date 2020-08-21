@@ -4,10 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "scss": "node-sass src/scss -o dist/css --output-style compressed",
+    "html": "mkdir dist && cp src/*.html dist",
+    "scss": "node-sass src/scss/ -o dist/css/ --output-style compressed",
     "autoprefixer": "postcss dist/css/ -u autoprefixer -r",
-    "js": "cp src\\js\\index.js dist\\js\\index.js",
-    "server": "cd dist && live-server"
+    "images": "rm -rf dist\\images && mkdir dist\\images && cp src/images/* dist/images/",
+    "js": "rm -rf dist\\js && mkdir dist\\js && cp src\\js\\index.js dist\\js\\index.js",
+    "server": "cd dist && live-server",
+    "build:html": "npm run html",
+    "build:css": "npm run scss && npm run autoprefixer",
+    "build:images": "npm run images",
+    "build:js": "npm run js",
+    "build:all": "npm run build:html && npm run build:css && npm run build:images && npm run build:js",
+    "watch:css": "node-sass src/scss -o dist/css --output-style compressed -w",
+    "watch:js": "onchange \"src/js/*.js\" -- npm run build:js",
+    "dev": "npm run build:all && parallelshell \"npm run server\" \"npm run watch:css\" \"npm run watch:js\"",
+    "postinstall": "npm run dev"
   },
   "repository": {
     "type": "git",
@@ -23,6 +34,7 @@
     "autoprefixer": "^9.8.6",
     "live-server": "^1.2.1",
     "node-sass": "^4.14.1",
+    "onchange": "^7.0.2",
     "postcss-cli": "^7.1.1"
   }
 }

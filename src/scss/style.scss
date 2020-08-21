@@ -190,7 +190,7 @@ body {
     align-items: center;
     text-align: center;
     height: 100vh;
-    background-image: url('images/Banner-homepage.png');
+    background-image: url('/images/Banner-homepage.png');
     color: #ffffff;
 
     &__title {
@@ -275,7 +275,7 @@ body {
 
 .features {
     padding: 0;
-    background-image: url('images/Banner-homepage-feature.png');
+    background-image: url('/images/Banner-homepage-feature.png');
 
     &__container {
         padding: 4rem 1rem;

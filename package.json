@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/lpikor/serwis-kompa#readme",
   "devDependencies": {
+    "autoprefixer": "^9.8.6",
     "live-server": "^1.2.1",
-    "node-sass": "^4.14.1"
+    "node-sass": "^4.14.1",
+    "postcss": "^7.0.32"
   }
 }

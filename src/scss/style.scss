@@ -116,6 +116,20 @@ body {
     }
 }
 
+@media (max-height: 500px) {
+    .nav--active {
+        & .nav {
+            &__menu {
+                height: 100%;
+            }
+
+            &__contact-info {
+                display: none;
+            }
+        }
+    }
+}
+
 .logo {
     width: 12rem;
 

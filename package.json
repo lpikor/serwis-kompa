@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "scss": "node-sass src/style.scss dist/style.css",
+    "scss": "node-sass src/scss -o dist/css --output-style compressed",
     "server": "cd dist && live-server"
   },
   "repository": {

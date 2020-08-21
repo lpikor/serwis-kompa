@@ -6,6 +6,7 @@
   "scripts": {
     "scss": "node-sass src/scss -o dist/css --output-style compressed",
     "autoprefixer": "postcss dist/css/ -u autoprefixer -r",
+    "js": "cp src\\js\\index.js dist\\js\\index.js",
     "server": "cd dist && live-server"
   },
   "repository": {
@@ -22,7 +23,6 @@
     "autoprefixer": "^9.8.6",
     "live-server": "^1.2.1",
     "node-sass": "^4.14.1",
-    "postcss-cli": "^7.1.1",
-    "uglify-js": "^3.10.1"
+    "postcss-cli": "^7.1.1"
   }
 }

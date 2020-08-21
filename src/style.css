@@ -227,3 +227,9 @@ body {
   display: flex;
   justify-content: space-around;
   width: 100%; }
+
+.copyright {
+  padding: 1rem;
+  text-align: center;
+  background-color: #636464;
+  color: #ffffff; }

@@ -17,10 +17,15 @@ body {
 
 .btn {
   padding: .5rem 2rem;
+  min-width: 12rem;
+  display: inline-block;
   border-radius: 4px; }
   .btn--primary {
     background-color: #01486b;
     color: #ffffff; }
+  .btn--secondary {
+    background-color: transparent;
+    border: 2px solid #ffffff; }
 
 .nav {
   display: flex;
@@ -185,6 +190,19 @@ body {
     .statistics__item-value {
       margin-top: 1rem; }
 
-.why-us__btn {
-  display: inline-block;
-  margin-top: 2rem; }
+.why-us {
+  padding-bottom: 4rem; }
+  .why-us__btn {
+    margin-top: 2rem; }
+
+.features {
+  padding: 0;
+  background-image: url("images/Banner-homepage-feature.png"); }
+  .features__container {
+    padding: 4rem 1rem;
+    background-color: #007ebe;
+    color: #ffffff; }
+  .features .section__title {
+    color: #ffffff; }
+  .features__btn {
+    margin-top: 2rem; }

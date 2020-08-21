@@ -21,11 +21,18 @@ body {
 
 .btn {
     padding: .5rem 2rem;
+    min-width: 12rem;
+    display: inline-block;
     border-radius: 4px;
 
     &--primary {
         background-color: #01486b;
         color: #ffffff;
+    }
+
+    &--secondary {
+        background-color: transparent;
+        border: 2px solid #ffffff;
     }
 }
 
@@ -260,8 +267,27 @@ body {
 }
 
 .why-us {
+    padding-bottom: 4rem;
     &__btn {
-        display: inline-block;
+        margin-top: 2rem;
+    }
+}
+
+.features {
+    padding: 0;
+    background-image: url('images/Banner-homepage-feature.png');
+
+    &__container {
+        padding: 4rem 1rem;
+        background-color: #007ebe;
+        color: #ffffff;
+    }
+
+    & .section__title {
+        color: #ffffff;
+    }
+
+    &__btn {
         margin-top: 2rem;
     }
 }

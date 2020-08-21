@@ -15,6 +15,7 @@ ul {
 
 body {
     font-family: 'Lato', sans-serif;
+    background-color: #f7f6f6;
 }
 
 .nav {
@@ -26,7 +27,7 @@ body {
     height: 80px;
     width: 100%;
     padding: 1rem;
-    background-color: #ffffff;
+    background-color: #f7f6f6;
     color: #01486b;
 
     &__menu {
@@ -174,10 +175,60 @@ body {
     background-image: url('images/Banner-homepage.png');
     color: #ffffff;
 
+    &__title {
+        text-transform: uppercase;
+    }
+
     &__contact {
         display: flex;
         flex-direction: column;
         margin-top: 50%;
         margin-bottom: 1rem;
+    }
+}
+
+.section {
+    padding: 4rem 1rem 0;
+    text-align: center;
+
+    &__title {
+        color: #007ebe;
+    }
+
+    &__body {
+        margin-top: 2rem;
+    }
+}
+
+.services {
+    padding-left: 0;
+    padding-right: 0;
+
+    &__list-title {
+        margin-bottom: 1rem;
+    }
+
+    &__item {
+        padding: 1rem;
+        background-color: #007ebe;
+
+        &-title {
+            margin-top: 1rem;
+            color: #01486b;
+            text-transform: uppercase;
+        }
+
+        &-content {
+            margin-top: 1rem;
+            color: #ffffff;
+        }
+    }
+
+    &__item:nth-child(2n) {
+        background: #01486b;
+
+        & .services__item-title {
+            color: #007ebe;
+        }
     }
 }

@@ -205,8 +205,8 @@ body {
     justify-content: flex-end;
     align-items: center;
     text-align: center;
-    height: 100vh;
-    min-height: 350px;
+    padding: 2rem 1rem;
+    height: calc(100vh + 100px);
     color: #ffffff;
 
     &::before {
@@ -235,6 +235,7 @@ body {
     &__title {
         position: absolute;
         top: 50vh;
+        padding: 0 1rem;
         text-transform: uppercase;
     }
 
@@ -242,12 +243,12 @@ body {
         display: flex;
         flex-direction: column;
         margin-top: 50%;
-        margin-bottom: 1rem;
     }
 }
 
-@media (min-height: 300px) {
+@media (min-height: 500px) {
     .banner {
+        height: 100vh;
         &__contact {
             display: flex;
         }

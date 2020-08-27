@@ -216,6 +216,7 @@ body {
         height: 100%;
         width: 100%;
         background: url('../images/Banner-homepage.png') center;
+        background-size: cover;
         z-index: -2;
     }
 
@@ -228,15 +229,28 @@ body {
         width: 100%;
         background-color: #000000;
         opacity: .7;
-        z-index: -1;
+        z-index: -2;
     }
 
     &__title {
         position: absolute;
         top: calc(50vh - 40px);
+        width: 100%;
         padding: 0 1rem;
         font-size: 2rem;
         text-transform: uppercase;
+    }
+
+    &__title::before {
+        content:'';
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 12rem;
+        position: absolute;
+        background-color: #0cb0ffbf;
+        transform: translateY(-50%);
+        z-index: -1;
     }
 
     &__contact {
@@ -247,7 +261,7 @@ body {
         align-self: flex-end;
         margin-top: 50%;
         width: 16rem;
-        background-color: #007ebe;
+        background-color: #0cb0ffbf;
         padding: 1rem;
         border-radius: 50px 0 0 50px;
     }
@@ -331,12 +345,36 @@ body {
 }
 
 .features {
+    position: relative;
     padding: 0;
-    background-image: url('../images/Banner-homepage-feature.png');
+
+    &::before {
+        content:'';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url('../images/Banner-homepage-feature.png');
+        background-size: cover;
+        z-index: -2;
+    }
+
+    &::after {
+        content:'asdf';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #000000;
+        opacity: .7;
+        z-index: -1;
+    }
 
     &__container {
         padding: 4rem 1rem;
-        background-color: #007ebe;
+        background-color: #0cb0ffbf;
         color: #ffffff;
     }
 

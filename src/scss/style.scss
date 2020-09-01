@@ -299,6 +299,11 @@ body {
         margin-bottom: 2rem;
     }
 
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+
     &__item {
         display: flex;
         flex-direction: column;
@@ -357,6 +362,20 @@ body {
             align-self: flex-end;
             text-align: left;
             border-radius:125px 0 0 125px;
+        }
+        &__item:nth-child(4n),
+        &__item:nth-child(4n+1) {
+            background-color: #007ebe;
+            & .services__item-title {
+                color: #01486b;
+            }
+        }
+        &__item:nth-child(4n+2),
+        &__item:nth-child(4n+3) {
+            background: #01486b;
+            & .services__item-title {
+                color: #007ebe;
+            }
         }
     }
 }

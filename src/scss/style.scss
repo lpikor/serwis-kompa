@@ -433,6 +433,8 @@ body {
 
 .features {
     position: relative;
+    display: flex;
+    justify-content: flex-end;
     padding: 0;
 
     &::before {
@@ -473,6 +475,26 @@ body {
         margin-top: 2rem;
     }
 }
+
+@media (min-width: 768px) {
+    .features {
+        &__container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+            max-width: 450px;
+            padding: 0 7rem 0 4rem;
+            margin-right: calc(15vw - 3rem);
+            height: 800px;
+        }
+        &__btn {
+            text-align: center;
+        }
+    }
+}
+
+
 
 .contact-us {
     padding: 2rem 1rem 2rem;

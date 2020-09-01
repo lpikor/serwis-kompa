@@ -389,10 +389,39 @@ body {
         align-items: center;
         padding: 1rem 1rem;
 
+        &-content {
+            display: flex;
+            flex-direction: column;
+        }
+
         &-value {
             margin-top: 1rem;
         }
     }
+}
+
+@media (min-width:768px) {
+    .statistics {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__item {
+            flex-grow: 1;
+            flex-direction: row;
+            justify-content: space-between;
+            text-align: left;
+        }
+        &__item:nth-child(2) {
+            flex-direction: row-reverse;
+            text-align: right;
+        }
+    }
+}
+
+.why-us,
+.contact-us {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .why-us {

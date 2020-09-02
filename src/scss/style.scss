@@ -37,8 +37,8 @@ body {
 }
 
 .nav {
+    position: absolute;
     display: flex;
-    position: fixed;
     flex-direction: column;
     justify-content: space-between;
     font-family: 'Changa', sans-serif;
@@ -131,6 +131,62 @@ body {
     }
 }
 
+@media (min-width: 1024px) {
+    .nav {
+        flex-direction: column-reverse;
+        height: auto;
+        &__contact-info {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 1rem;
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        &__contact {
+            flex-grow: 0;
+            flex-direction: row;
+        }
+        &__contact-item {
+            margin-left: 2rem;
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+        &__social-media {
+            flex-grow: 0;
+            width: auto;
+        }
+        &__social-media-item {
+            margin-left: 2rem;
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+        &__menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1400px;
+            padding: 1rem;
+            margin: 0 auto;
+        }
+        &__list {
+            flex-grow: 0;
+            display: flex;
+            flex-direction: row;
+        }
+        &__item {
+            margin-left: 2rem;
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
 .logo {
     width: 12rem;
 
@@ -195,6 +251,12 @@ body {
             top: 0;
             transform: rotate(-45deg);
         }
+    }
+}
+
+@media (min-width: 1024px) {
+    .hamburger {
+        display: none;
     }
 }
 

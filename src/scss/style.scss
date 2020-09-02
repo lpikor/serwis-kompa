@@ -37,6 +37,7 @@ body {
     &--secondary {
         background-color: transparent;
         border: 2px solid #ffffff;
+        text-transform: uppercase;
     }
 }
 
@@ -330,9 +331,10 @@ body {
         align-self: flex-end;
         margin-top: 50%;
         width: 16rem;
-        background-color: #0cb0ffbf;
         padding: 1rem;
+        background-color: #0cb0ffbf;
         border-radius: 50px 0 0 50px;
+        font-family: 'Changa', sans-serif;
     }
 }
 
@@ -345,16 +347,34 @@ body {
     }
 }
 
+@media (min-width: 768px) {
+    .banner {
+        &__title {
+            font-size: 2.5rem;
+        }
+    }
+}
+
 .section {
     padding: 4rem 1rem 0;
     text-align: center;
 
     &__title {
         color: #007ebe;
+        font-size: 1.75rem;
     }
 
     &__body {
         margin-top: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .section {
+        &__title {
+            font-size: 2.25rem;
+            line-height: 1.3;
+        }
     }
 }
 
@@ -465,6 +485,8 @@ body {
 
         &-value {
             margin-top: 1rem;
+            font-size: 1.25rem;
+            font-weight: bold;
         }
     }
 }

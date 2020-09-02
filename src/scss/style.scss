@@ -28,16 +28,36 @@ body {
     min-width: 12rem;
     display: inline-block;
     border-radius: 4px;
+    transition: all .25s ease;
 
     &--primary {
         background-color: #01486b;
         color: #ffffff;
+        transition: all .25s ease;
+
+        &:hover {
+            background-color: #007ebe;
+            transition: all .25s ease;
+        }
     }
 
     &--secondary {
         background-color: transparent;
         border: 2px solid #ffffff;
+        color: #ffffff;
         text-transform: uppercase;
+        transition: all .25s ease;
+
+        &:hover {
+            background-color: #ffffff;
+            color: #007ebe;
+            transition: all .25s ease;
+        }
+    }
+
+    &:active {
+        transform: scale(.95);
+        transition: all .25s ease;
     }
 }
 

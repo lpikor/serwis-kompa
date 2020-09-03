@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa&family=Lato:wght@400;700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -24,6 +26,7 @@ body {
 }
 
 .btn {
+    text-align: center;
     padding: .5rem 2rem;
     min-width: 12rem;
     display: inline-block;
@@ -73,6 +76,7 @@ body {
     background-color: #ffffff;
     color: #01486b;
     z-index: 10;
+    transition: all .25s ease;
 
     &__menu {
         display: flex;
@@ -94,6 +98,18 @@ body {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+    }
+
+    &__link {
+        transition: all .25s ease;
+
+        &:hover {
+            color: #007ebe;
+        }
+
+        &:active {
+            color: #000000;
+        }
     }
 
     &__contact-info {
@@ -292,11 +308,15 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     text-align: center;
     height: calc(100vh + 8rem);
     color: #ffffff;
+
+    &--main {
+        justify-content: flex-end;
+    }
 
     &::before {
         content:'';
@@ -323,7 +343,6 @@ body {
     }
 
     &__title {
-        position: absolute;
         top: calc(50vh - 40px);
         width: 100%;
         padding: 0 1rem;
@@ -331,7 +350,11 @@ body {
         text-transform: uppercase;
     }
 
-    &__title::before {
+    &--main &__title {
+        position: absolute;
+    }
+
+    &--main &__title::before {
         content:'';
         top: 50%;
         left: 0;
@@ -341,6 +364,12 @@ body {
         background-color: #0cb0ffbf;
         transform: translateY(-50%);
         z-index: -1;
+    }
+
+    &__subtitle {
+        max-width: 400px;
+        padding: 0 1rem;
+        margin-top: 1rem;
     }
 
     &__contact {
@@ -376,7 +405,7 @@ body {
 }
 
 .section {
-    padding: 4rem 1rem 0;
+    padding: 4rem 1rem;
     text-align: center;
 
     &__title {
@@ -385,6 +414,10 @@ body {
     }
 
     &__body {
+        margin-top: 2rem;
+    }
+
+    &__btn {
         margin-top: 2rem;
     }
 }
@@ -401,8 +434,7 @@ body {
 .services {
     display: flex;
     flex-direction: column;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 4rem 0 0;
 
     &__list-title {
         margin-bottom: 2rem;
@@ -490,6 +522,7 @@ body {
 }
 
 .statistics {
+    text-align: center;
     margin-top: 1rem;
     
     &__item {
@@ -508,6 +541,10 @@ body {
             font-size: 1.25rem;
             font-weight: bold;
         }
+    }
+
+    &--many {
+        padding: 4rem 1rem;
     }
 }
 
@@ -533,13 +570,6 @@ body {
 .contact-us {
     max-width: 800px;
     margin: 0 auto;
-}
-
-.why-us {
-    padding-bottom: 4rem;
-    &__btn {
-        margin-top: 2rem;
-    }
 }
 
 .features {
@@ -581,10 +611,6 @@ body {
     & .section__title {
         color: #ffffff;
     }
-
-    &__btn {
-        margin-top: 2rem;
-    }
 }
 
 @media (min-width: 768px) {
@@ -605,17 +631,9 @@ body {
     }
 }
 
-
-
 .contact-us {
-    padding: 2rem 1rem 2rem;
-
     &__address {
         display: block;
-    }
-
-    &__btn {
-        margin-top: 2rem;
     }
 }
 
@@ -623,7 +641,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem 1rem 2rem;
+    padding: 4rem 1rem;
     background-color: #ffffff;
 
     &__logo {
@@ -649,4 +667,35 @@ body {
     text-align: center;
     background-color: #636464;
     color: #ffffff;
+}
+
+.see-more {
+    background-color: #007ebe;
+
+    & .section {
+        &__title {
+            color: #01486b;
+        }
+        &__body {
+            color: #ffffff;
+        }
+    }
+
+    &--secondary {
+        background-color: #01486b;
+
+        & .section {
+            &__title {
+                color: #007ebe;
+            }
+        }
+    }
+}
+
+.services-contact {
+    & .section {
+        &__body {
+            margin-top: 0;
+        }
+    }
 }

@@ -355,6 +355,7 @@ body {
 
     &--main &__title {
         position: absolute;
+        text-align: center;
     }
 
     &--main &__title::before {
@@ -399,6 +400,9 @@ body {
             padding: 0 4rem;
         }
         &__title {
+            font-size: 3.5rem;
+        }
+        &--main &__title {
             font-size: 2.5rem;
         }
     }

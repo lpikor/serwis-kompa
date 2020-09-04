@@ -314,6 +314,10 @@ body {
     height: calc(100vh + 8rem);
     color: #ffffff;
 
+    &__container {
+        padding: 0 1rem;
+    }
+
     &--main {
         justify-content: flex-end;
     }
@@ -345,7 +349,6 @@ body {
     &__title {
         top: calc(50vh - 40px);
         width: 100%;
-        padding: 0 1rem;
         font-size: 2rem;
         text-transform: uppercase;
     }
@@ -368,7 +371,6 @@ body {
 
     &__subtitle {
         max-width: 400px;
-        padding: 0 1rem;
         margin-top: 1rem;
     }
 
@@ -387,19 +389,27 @@ body {
     }
 }
 
-@media (min-height: 500px) {
+@media (min-width: 768px) {
     .banner {
-        height: 100vh;
-        &__contact {
-            display: flex;
+        justify-content: flex-end;
+        &__container {
+            width: 100%;
+            max-width: 1400px;
+            margin-bottom: 15vh;
+            padding: 0 4rem;
+        }
+        &__title {
+            font-size: 2.5rem;
         }
     }
 }
 
-@media (min-width: 768px) {
+@media (min-height: 500px) {
     .banner {
-        &__title {
-            font-size: 2.5rem;
+        height: 100vh;
+        text-align: left;
+        &__contact {
+            display: flex;
         }
     }
 }

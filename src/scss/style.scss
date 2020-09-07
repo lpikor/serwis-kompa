@@ -566,6 +566,7 @@ body {
 
     &--many {
         padding: 4rem 1rem;
+        margin: 0 auto;
     }
 }
 
@@ -586,8 +587,8 @@ body {
         }
         &--many {
             justify-content: space-around;
-            margin: 0 auto;
             max-width: 1400px;
+            padding: 6rem 1rem;
             & .statistics {
                 &__item {
                     flex-grow: 0;

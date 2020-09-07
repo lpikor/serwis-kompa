@@ -329,7 +329,7 @@ body {
         left: 0;
         height: 100%;
         width: 100%;
-        background: url('../images/Banner-homepage.png') center;
+        background: url('../images/Slider/Strona-glowna.jpg') center;
         background-size: cover;
         z-index: -2;
     }
@@ -552,6 +552,10 @@ body {
         align-items: center;
         padding: 1rem 1rem;
 
+        & img {
+            height: 80px;
+        }
+
         &-content {
             display: flex;
             flex-direction: column;
@@ -598,9 +602,6 @@ body {
                     flex-direction: row;
                     text-align: left;
                 }
-                &__item img {
-                    height: 80px;
-                }
                 &__item-content {
                     margin-left: 1rem;
                 }
@@ -631,7 +632,7 @@ body {
         left: 0;
         height: 100%;
         width: 100%;
-        background-image: url('../images/Banner-homepage-feature.png');
+        background-image: url('../images/Slider/Nasze-uslugi.jpg');
         background-size: cover;
         z-index: -2;
     }
@@ -706,6 +707,14 @@ body {
     justify-content: space-around;
     width: 100%;
     max-width: 250px;
+}
+
+.social-media-icon {
+    width: 2rem;
+}
+
+.social-media__icon {
+    width: 2.5rem;
 }
 
 .copyright {

@@ -7,7 +7,7 @@
     "html": "rm -rf css images js *.html && cp src/*.html dist",
     "scss": "node-sass src/scss/ -o dist/css/ --output-style compressed",
     "autoprefixer": "postcss dist/css/ -u autoprefixer -r",
-    "images": "rm -rf dist\\images && mkdir dist\\images && cp src/images/* dist/images/",
+    "images": "rm -rf dist\\images && mkdir dist\\images && cp -r src/images/* dist/images/",
     "js": "rm -rf dist\\js && mkdir dist\\js && cp src\\js\\index.js dist\\js\\index.js",
     "server": "cd dist && live-server",
     "build:html": "npm run html",

@@ -499,6 +499,10 @@ body {
             color: #007ebe;
         }
     }
+
+    & .section__body {
+        width: 100%;
+    }
 }
 
 @media (min-width: 768px) {

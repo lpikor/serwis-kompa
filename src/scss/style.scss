@@ -580,6 +580,30 @@ body {
             flex-direction: row-reverse;
             text-align: right;
         }
+        &--many {
+            justify-content: space-around;
+            margin: 0 auto;
+            max-width: 1400px;
+            & .statistics {
+                &__item {
+                    flex-grow: 0;
+                    justify-content: center;
+                }
+                &__item:nth-child(2) {
+                    flex-direction: row;
+                    text-align: left;
+                }
+                &__item img {
+                    height: 80px;
+                }
+                &__item-content {
+                    margin-left: 1rem;
+                }
+                &__item-value {
+                    margin-top: 0;
+                }
+            }
+        }
     }
 }
 

@@ -812,11 +812,16 @@ body {
             margin-top: 0;
         }
     }
+    &--headless {
+        .section__content {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+    }
 }
 
 .services-info {
     padding: 2rem 1rem;
-    // DODAĆ ROWY I NA NIE NADAĆ WEWNĘTRZNE PADDINGI A ZEWNĘTRZNE DAĆ NA SERVICES-INFO
 
     &:first-child {
         padding-top: 4rem;

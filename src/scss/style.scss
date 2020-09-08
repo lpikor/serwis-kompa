@@ -366,6 +366,10 @@ body {
         background-image: url('../images/Slider/Monitoring.jpg');
     }
 
+    &-instalacje-antenowe::before {
+        background-image: url('../images/Slider/Instalacje-antenowe.jpg');
+    }
+
     &__title {
         top: calc(50vh - 40px);
         width: 100%;
@@ -919,6 +923,12 @@ body {
             }
             &-6 {
                 background-image: url('../images/Uslugi-monitoring/1.jpg');
+            }
+            &-7 {
+                background-image: url('../images/Uslugi-telewizja/1.jpg');
+            }
+            &-8 {
+                background-image: url('../images/Uslugi-telewizja/3.jpg');
             }
         }
         &__content {

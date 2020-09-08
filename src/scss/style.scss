@@ -320,6 +320,10 @@ body {
 
     &--main {
         justify-content: flex-end;
+
+        & .banner__title {
+            padding: 0 1rem;
+        }
     }
 
     &::before {
@@ -394,6 +398,7 @@ body {
     .banner {
         justify-content: flex-end;
         &__container {
+            text-align: left;
             width: 100%;
             max-width: 1400px;
             margin-bottom: 15vh;

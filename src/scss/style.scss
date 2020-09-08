@@ -370,6 +370,10 @@ body {
         background-image: url('../images/Slider/Instalacje-antenowe.jpg');
     }
 
+    &-o-nas::before {
+        background-image: url('../images/Slider/O-nas.jpg');
+    }
+
     &__title {
         top: calc(50vh - 40px);
         width: 100%;
@@ -938,6 +942,12 @@ body {
             }
             &-8 {
                 background-image: url('../images/Uslugi-telewizja/3.jpg');
+            }
+            &-9 {
+                background-image: url('../images/O-nas/1.jpg');
+            }
+            &-10 {
+                background-image: url('../images/O-nas/2.jpg');
             }
         }
         &__content {

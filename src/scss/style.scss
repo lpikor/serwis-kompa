@@ -856,6 +856,7 @@ body {
     padding: 2rem 1rem;
     max-width: 800px;
     margin: 0 auto;
+    font-family: 'Changa', sans-serif;
 
     &:first-child {
         padding-top: 4rem;
@@ -890,6 +891,14 @@ body {
 
     &__list-item {
         margin-top: 0.5rem;
+    }
+
+    &__paragraph {
+        margin-top: 0.5rem;
+    }
+
+    &__feature {
+        text-transform: uppercase;
     }
 }
 

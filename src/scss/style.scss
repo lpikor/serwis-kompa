@@ -868,3 +868,39 @@ body {
         margin-top: 0.5rem;
     }
 }
+
+@media (min-width: 1024px) {
+    .services-info {
+        display: flex;
+        max-width: none;
+        margin: 0;
+        padding: 0;
+        &__content-container {
+            flex-basis: 47%;
+        }        
+        &__image {
+            flex-basis: 53%;
+            background: url('../images/Uslugi-serwis-komputerowy/1.jpg') 50% 50%;
+            background-size: cover;
+        }
+        &__content {
+            text-align: left;
+            max-width: 435px;
+            margin: 0 auto;
+            padding: 4rem 1rem;
+        }
+        &__header {
+            text-align: left;
+        }
+
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+
+// Hasło1:
+// 89osQLMAff
+// Hasło2:
+// Ns3RXX7EXGwM5HymRHtA

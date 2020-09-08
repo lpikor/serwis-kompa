@@ -362,6 +362,10 @@ body {
         background-image: url('../images/Slider/Nasze-uslugi.jpg');
     }
 
+    &-monitoring::before {
+        background-image: url('../images/Slider/Monitoring.jpg');
+    }
+
     &__title {
         top: calc(50vh - 40px);
         width: 100%;
@@ -907,6 +911,15 @@ body {
             &-3 {
                 background-image: url('../images/Uslugi-serwis-komputerowy/3.jpg');
             }
+            &-4 {
+                background-image: url('../images/Uslugi-monitoring/3.jpg');
+            }
+            &-5 {
+                background-image: url('../images/Uslugi-monitoring/2.jpg');
+            }
+            &-6 {
+                background-image: url('../images/Uslugi-monitoring/1.jpg');
+            }
         }
         &__content {
             text-align: left;
@@ -923,9 +936,3 @@ body {
         }
     }
 }
-
-
-// Hasło1:
-// 89osQLMAff
-// Hasło2:
-// Ns3RXX7EXGwM5HymRHtA

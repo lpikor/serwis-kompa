@@ -411,7 +411,6 @@ body {
 @media (min-height: 500px) {
     .banner {
         height: 100vh;
-        text-align: left;
         &__contact {
             display: flex;
         }
@@ -812,5 +811,45 @@ body {
         &__body {
             margin-top: 0;
         }
+    }
+}
+
+.services-info {
+    padding: 2rem 1rem;
+    // DODAĆ ROWY I NA NIE NADAĆ WEWNĘTRZNE PADDINGI A ZEWNĘTRZNE DAĆ NA SERVICES-INFO
+
+    &:first-child {
+        padding-top: 4rem;
+    }
+
+    &__header {
+        text-align: center;
+    }
+
+    &__title {
+        color: #007ebe;
+    }
+
+    &__description {
+        margin-top: .5rem;
+        font-weight: bold;
+    }
+
+    &__body {
+        margin-top: 2rem;
+    }
+
+    &__list-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+
+    &__list {
+        list-style-type: disc;
+        margin-left: 1rem;
+    }
+
+    &__list-item {
+        margin-top: 0.5rem;
     }
 }

@@ -807,6 +807,9 @@ body {
 }
 
 .services-contact {
+    max-width: 800px;
+    margin: 0 auto;
+    
     & .section {
         &__body {
             margin-top: 0;
@@ -822,6 +825,8 @@ body {
 
 .services-info {
     padding: 2rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
 
     &:first-child {
         padding-top: 4rem;

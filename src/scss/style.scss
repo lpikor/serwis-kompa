@@ -413,7 +413,7 @@ body {
             text-align: left;
             width: 100%;
             max-width: 1400px;
-            margin-bottom: 15vh;
+            margin-bottom: 5vh;
             padding: 0 4rem;
         }
         &__title {
@@ -428,6 +428,10 @@ body {
 @media (min-height: 500px) {
     .banner {
         height: 100vh;
+        max-height: 800px;
+        &--main {
+            max-height: none;
+        }
         &__contact {
             display: flex;
         }

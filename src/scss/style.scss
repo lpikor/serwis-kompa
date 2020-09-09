@@ -374,9 +374,14 @@ body {
         background-image: url('../images/Slider/O-nas.jpg');
     }
 
+    &-dla-klienta::before {
+        background-image: url('../images/Slider/Dla-klienta.jpg');
+    }
+
     &__title {
         top: calc(50vh - 40px);
         width: 100%;
+        max-width: 650px;
         font-size: 2rem;
         text-transform: uppercase;
     }
@@ -384,6 +389,7 @@ body {
     &--main &__title {
         position: absolute;
         text-align: center;
+        max-width: none;
     }
 
     &--main &__title::before {
@@ -400,7 +406,8 @@ body {
 
     &__subtitle {
         max-width: 400px;
-        margin-top: 1rem;
+        margin: 1rem auto 0;
+        font-family: 'Changa', sans-serif;
     }
 
     &__contact {
@@ -433,6 +440,9 @@ body {
         }
         &--main &__title {
             font-size: 2.5rem;
+        }
+        &__subtitle {
+            margin: 1rem 0 0;
         }
     }
 }

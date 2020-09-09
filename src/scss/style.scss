@@ -975,3 +975,44 @@ body {
         }
     }
 }
+
+.price-list {
+    text-align: center;
+    width: 100%;
+    font-family: 'Changa', sans-serif;
+    border-collapse: collapse;
+
+    &-container {
+        margin: 4rem auto;
+        padding: 0 1rem;
+        max-width: 1300px;
+    }
+
+    &__title {
+        text-align: left;
+        margin-bottom: 2rem;
+        color: #007ebe;
+        font-size: 1.75rem;
+    }
+
+    & th,
+    & td {
+        padding: 1rem;
+        width: 50%;
+        border: 1px dashed #007ebe;
+    }
+
+    & th {
+        background-color: #007ebe;
+        color: #ffffff;
+        font-weight: normal;
+
+        &:nth-child(even) {
+            background-color: #01486b;
+        }
+    }
+
+    & td {
+        background-color: #ffffff;
+    }
+}

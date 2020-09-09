@@ -1030,3 +1030,36 @@ body {
         padding: 2rem;
     }
 }
+
+.solutions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    max-width: 1400px;
+    margin: 4rem auto;
+
+    &__image {
+        width: 100%;
+        max-width: 450px;
+        padding: 1rem;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .solutions {
+        flex-direction: row;
+        &__image {
+            width: auto;
+            height: 200px;
+        }
+    }
+}

@@ -985,7 +985,7 @@ body {
     &-container {
         margin: 4rem auto;
         padding: 0 1rem;
-        max-width: 1300px;
+        max-width: 1400px;
     }
 
     &__title {
@@ -1014,5 +1014,19 @@ body {
 
     & td {
         background-color: #ffffff;
+    }
+}
+
+.manufacturers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    &__item {
+        height: 200px;
+        padding: 2rem;
     }
 }

@@ -26,11 +26,12 @@ body {
 }
 
 .btn {
+    display: inline-block;
     text-align: center;
     padding: .5rem 2rem;
     min-width: 12rem;
-    display: inline-block;
     border-radius: 4px;
+    font-family: 'Lato', sans-serif;
     transition: all .25s ease;
 
     &--primary {
@@ -1229,6 +1230,7 @@ body {
     max-width: 1000px;
     padding: 0 1rem;
     margin: 2rem auto;
+    font-family: 'Changa', sans-serif;
 
     &__heading {
         margin: 1rem;
@@ -1244,7 +1246,44 @@ body {
 }
 
 .related-posts {
+    text-align: center;
+    margin: 4rem auto;
+    max-width: 1200px;
+
+    &__heading {
+        font-size: 2rem;
+    }
+
+    &__container {
+        margin-top: 2rem;
+    }
+
+    &__item {
+        margin: 1rem auto;
+        padding: 1rem;
+        max-width: 400px;
+        font-family: 'Changa', sans-serif;
+    }
+
     &__image {
         width: 100%;
+    }
+
+    &__title {
+        font-weight: normal;
+    }
+
+    &__date {
+        display: block;
+        margin-top: .5rem;
+        color: #636464;
+    }
+}
+
+@media (min-width: 768px) {
+    .related-posts {
+        &__container {
+            display: flex;
+        }
     }
 }

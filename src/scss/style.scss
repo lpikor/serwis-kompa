@@ -378,6 +378,18 @@ body {
         background-image: url('../images/Slider/Dla-klienta.jpg');
     }
 
+    &-cennik::before {
+        background-image: url('../images/Slider/Cennik.jpg');
+    }
+
+    &-referencje::before {
+        background-image: url('../images/Slider/Referencje.jpg');
+    }
+
+    &-newsy::before {
+        background-image: url('../images/Slider/Newsy.jpg');
+    }
+
     &__title {
         top: calc(50vh - 40px);
         width: 100%;
@@ -1101,5 +1113,51 @@ body {
 @media (min-width: 1536px) {
     .testimonials {
         grid-template-columns: 400px 400px 400px;
+    }
+}
+
+.post-teaser {
+    margin: 2rem 0;
+    font-family: 'Changa', sans-serif;
+
+    &__image {
+        width: 100%;
+    }
+
+    &__content {
+        padding: 2rem 1rem;
+    }
+
+    &__title {
+        color: #01486b;
+    }
+
+    &__date {
+        display: block;
+        margin-top: 2rem;
+        color: #636464;
+    }
+
+    &__body {
+        margin-top: 1rem;
+    }
+
+    &__btn {
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .post-teaser {
+        display: flex;
+
+        &__image {
+            width: 50%;
+            height: auto;
+        }
+        
+        &__content {
+            padding: 2rem;
+        }
     }
 }

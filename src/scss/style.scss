@@ -1161,3 +1161,23 @@ body {
         }
     }
 }
+
+.dot-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0;
+    &__item {
+        height: 0.75rem;
+        width: 0.75rem;
+        margin: 0 .5rem;
+        border-radius: 100px;
+        background-color: #636464;
+        opacity: .25;
+
+        &--active {
+            background-color: #007ebe;
+            opacity: 1;
+        }
+    }
+}

@@ -1126,9 +1126,11 @@ body {
 
     &__content {
         padding: 2rem 1rem;
+        max-width: 800px;
     }
 
     &__title {
+        max-width: 650px;
         color: #01486b;
     }
 
@@ -1150,6 +1152,7 @@ body {
 @media (min-width: 1024px) {
     .post-teaser {
         display: flex;
+        align-items: center;
 
         &__image {
             width: 50%;

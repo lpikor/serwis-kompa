@@ -391,6 +391,10 @@ body {
         background-image: url('../images/Slider/Newsy.jpg');
     }
 
+    &-programy-dla-firm::before {
+        background-image: url('../images/Slider/Programy-dla-firm.jpg');
+    }
+
     &__title {
         top: calc(50vh - 40px);
         width: 100%;
@@ -858,6 +862,10 @@ body {
             flex-direction: column;
             justify-content: flex-end;
             align-items: flex-end;
+        }
+        &--programs {
+            margin-top: 8rem;
+            margin-bottom: 8rem;
         }
     }
 }

@@ -604,6 +604,7 @@ body {
 .statistics {
     text-align: center;
     margin-top: 1rem;
+    font-family: 'Changa', sans-serif;
     
     &__item {
         display: flex;
@@ -622,6 +623,7 @@ body {
 
         &-value {
             margin-top: 1rem;
+            color: #007ebe;
             font-size: 1.25rem;
             font-weight: bold;
         }

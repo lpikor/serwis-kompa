@@ -395,6 +395,10 @@ body {
         background-image: url('../images/Slider/Programy-dla-firm.jpg');
     }
 
+    &-faktura-ibiznes::before {
+        background-image: url('../images/Slider/Programy-dla-firm.jpg');
+    }
+
     &__title {
         top: calc(50vh - 40px);
         width: 100%;
@@ -1297,4 +1301,98 @@ body {
             display: flex;
         }
     }
+}
+
+.product {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-family: 'Changa', sans-serif;
+
+    &:first-child {
+        margin-top: 4rem;
+    }
+
+    &__showcase {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 4px;
+        background-color: #ffffff;
+    }
+
+    &__image {
+        padding: 1rem;
+    }
+
+    &__btn {
+        align-self: stretch;
+    }
+
+    &__info {
+        margin-top: 1rem;
+    }
+
+    &__name {
+        color: #007ebe;
+    }
+
+    &__content {
+        margin-top: 1rem;
+    }
+
+    &__paragraph {
+        margin-top: 0.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .product {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        text-align: left;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        &:nth-child(even) {
+            flex-direction: row;
+        }
+        &__showcase {
+            flex-grow: 1;
+            margin: 2rem;
+        }
+        &__info {
+            width: 50%;
+            max-width: 500px;
+            margin: auto;
+        }
+        &__content {
+            height: 250px;
+            overflow: auto;
+
+            &::-webkit-scrollbar {
+                width: 3px;
+            }
+            
+            &::-webkit-scrollbar-thumb {
+                border-radius: 50px;
+            }
+            &::-webkit-scrollbar-thumb{
+                background-color: rgba(0, 126, 190, .5);
+            }
+        }
+    }
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #007ebe;
 }

@@ -403,6 +403,10 @@ body {
         background-image: url('../images/Slider/Regulamin.jpg');
     }
 
+    &-kontakt::before {
+        background-image: url('../images/Slider/Kontakt.jpg');
+    }
+
     &__title {
         top: calc(50vh - 40px);
         width: 100%;
@@ -1434,5 +1438,35 @@ body {
         &::marker {
             font-size: 2rem;;
         }
+    }
+}
+
+.maps {
+    max-width: 1400px;
+    margin: 4rem auto;
+    padding: 1rem;
+
+    &__item {
+        padding: 1rem;
+    }
+
+    & iframe {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .maps {
+        display: flex;
+
+        &__item {
+            flex-grow: 1;
+        }
+    }
+}
+
+.contact {
+    &__image {
+        width: 50px;
     }
 }

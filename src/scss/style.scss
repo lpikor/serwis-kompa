@@ -399,6 +399,10 @@ body {
         background-image: url('../images/Slider/Programy-dla-firm.jpg');
     }
 
+    &-regulamin::before {
+        background-image: url('../images/Slider/Regulamin.jpg');
+    }
+
     &__title {
         top: calc(50vh - 40px);
         width: 100%;
@@ -1416,4 +1420,19 @@ body {
 }
 ::-webkit-scrollbar-thumb{
     background-color: #007ebe;
+}
+
+.statute {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 2rem;
+    font-family: 'Changa', sans-serif;
+
+    &__item {
+        margin-top: 0.5rem;
+
+        &::marker {
+            font-size: 2rem;;
+        }
+    }
 }

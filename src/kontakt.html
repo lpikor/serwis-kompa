@@ -90,52 +90,64 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.571392572209!2d22.05288831596331!3d50.11302897943032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ce450d369f23f%3A0x18d4eff675347b44!2sJasionka%2071A%2C%2036-002%20Jasionka!5e0!3m2!1spl!2spl!4v1600163412445!5m2!1spl!2spl" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
         </div>
-        <div class="contact">
-            <div class="contact__info">
-                <div class="contact__item">
-                    <img src="images/Ikonki/Lokalizacja.png" alt="" class="contact__image">
-                    <div class="contact__content">
-                        <span class="contact__value">Trzebownisko 343</span>
-                        <span class="contact__value">36-001 Trzebownisko</span>
+        <div class="contact-container">
+            <div class="contact">
+                <div class="contact__info">
+                    <div class="contact__item">
+                        <img src="images/Ikonki/Lokalizacja.png" alt="" class="contact__image">
+                        <div class="contact__body">
+                            <div class="contact__content">
+                                <span class="contact__value">Trzebownisko 343</span>
+                                <span class="contact__value">36-001 Trzebownisko</span>
+                            </div>
+                            <div class="contact__content">
+                                <span class="contact__value">Jasionka 71 A</span>
+                                <span class="contact__value">36-002 Jasionka</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="contact__content">
-                        <span class="contact__value">Jasionka 71 A</span>
-                        <span class="contact__value">36-002 Jasionka</span>
+                    <div class="contact__item">
+                        <img src="images/Ikonki/E-mail.png" alt="" class="contact__image">
+                        <div class="contact__body">
+                            <div class="contact__content">
+                                <span class="contact__value">info@serwiskompa.pl</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact__item">
+                        <img src="images/Ikonki/Komorka.png" alt="" class="contact__image">
+                        <div class="contact__body">
+                            <div class="contact__content">
+                                <span class="contact__value">+48 795 454 494</span>
+                            </div>
+                            <div class="contact__content">
+                                <span class="contact__value">+48 17 250 27 44</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="contact__item">
-                    <img src="images/Ikonki/E-mail.png" alt="" class="contact__image">
-                    <div class="contact__content">
-                        <span class="contact__value">info@serwiskompa.pl</span>
+                <form action="" class="form">
+                    <div class="form__group">
+                        <label for="name" class="form__label">Imię</label>
+                        <input type="text" name="name" id="name" class="form__input" placeholder="Imię">
                     </div>
-                </div>
-                <div class="contact__item">
-                    <img src="images/Ikonki/Komorka.png" alt="" class="contact__image">
-                    <div class="contact__content">
-                        <span class="contact__value">+48 795 454 494</span>
-                        <span class="contact__value">+48 17 250 27 44</span>
+                    <div class="form__group">
+                        <label for="email" class="form__label">E-mail</label>
+                        <input type="text" name="email" id="email" class="form__input" placeholder="E-mail">
                     </div>
-                </div>
+                    <div class="form__group">
+                        <label for="subject" class="form__label">Temat</label>
+                        <input type="text" name="subject" id="subject" class="form__input" placeholder="Temat">
+                    </div>
+                    <div class="form__group">
+                        <label for="subject" class="form__label">Temat</label>
+                        <textarea name="message" id="message" cols="30" rows="10" class="form__textarea" placeholder="Wiadomość"></textarea>
+                    </div>
+                    <div class="form__group">
+                        <input type="submit" value="Wyślij" class="btn btn--primary btn--form form__btn">
+                    </div>
+                </form>
             </div>
-            <form action="">
-                <div class="form__group">
-                    <label for="name" class="form__label">Imię</label>
-                    <input type="text" name="name" id="name" class="form__input" placeholder="Imię">
-                </div>
-                <div class="form__group">
-                    <label for="email" class="form__label">E-mail</label>
-                    <input type="text" name="email" id="email" class="form__input" placeholder="E-mail">
-                </div>
-                <div class="form__group">
-                    <label for="subject" class="form__label">Temat</label>
-                    <input type="text" name="subject" id="subject" class="form__input" placeholder="Temat">
-                </div>
-                <div class="form__group">
-                    <label for="subject" class="form__label">Temat</label>
-                    <textarea name="message" id="message" cols="30" rows="10" class="form__textarea"></textarea>
-                </div>
-                <input type="submit" value="Wyślij" class="btn.btn--primary.btn--form.form__btn">
-            </form>
         </div>
     </main>
 

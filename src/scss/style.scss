@@ -105,6 +105,19 @@ body {
         align-items: center;
     }
 
+    &__dropdown-arrow {
+        margin-left: .5rem;
+        padding: 0 .5rem;
+    }
+
+    &__item {
+        text-align: center;
+    }
+
+    &__item--active &__dropdown-arrow {
+        transform: rotate(90deg);
+    }
+
     &__link {
         transition: all .25s ease;
 
@@ -149,6 +162,10 @@ body {
         align-items: center;
         width: 100%;
     }
+
+    &__inner-list--active {
+        display: flex;
+    }
 }
 
 .nav--active {
@@ -156,6 +173,14 @@ body {
 
     & .nav {
         &__list {
+            display: flex;
+        }
+
+        &__inner-list {
+            display: none;
+        }
+
+        &__inner-list--active {
             display: flex;
         }
 

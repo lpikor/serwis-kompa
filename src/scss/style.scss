@@ -105,17 +105,8 @@ body {
         align-items: center;
     }
 
-    &__dropdown-arrow {
-        margin-left: .5rem;
-        padding: 0 .5rem;
-    }
-
     &__item {
         text-align: center;
-    }
-
-    &__item--active &__dropdown-arrow {
-        transform: rotate(90deg);
     }
 
     &__link {
@@ -128,6 +119,24 @@ body {
         &:active {
             color: #000000;
         }
+    }
+
+    &__dropdown-arrow {
+        margin-left: .5rem;
+        padding: 0 .5rem;
+    }
+
+    &__item--active &__dropdown-arrow {
+        transform: rotate(90deg);
+    }
+
+    &__inner-list {
+        display: none;
+    }
+
+    &__inner-list--active {
+        display: flex;
+        flex-direction: column;
     }
 
     &__contact-info {
@@ -176,14 +185,6 @@ body {
             display: flex;
         }
 
-        &__inner-list {
-            display: none;
-        }
-
-        &__inner-list--active {
-            display: flex;
-        }
-
         &__contact-info {
             display: flex;
         }
@@ -208,6 +209,9 @@ body {
     .nav {
         flex-direction: column-reverse;
         height: auto;
+        &__dropdown-arrow {
+            display: none;
+        }
         &__contact-info {
             display: flex;
             flex-direction: row;

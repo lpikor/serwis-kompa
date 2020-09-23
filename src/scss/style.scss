@@ -82,12 +82,13 @@ body {
     color: #01486b;
     z-index: 10;
     transition: all .25s ease;
-
+    
     &__menu {
         display: flex;
         flex-direction: column;
         justify-content: center;
         height: 65%;
+        text-transform: uppercase;
     }
 
     &__header {
@@ -107,18 +108,37 @@ body {
 
     &__item {
         text-align: center;
+        position: relative;
     }
 
     &__link {
         transition: all .25s ease;
 
         &:hover {
-            color: #007ebe;
+            color: #0cb0ff;
         }
 
         &:active {
             color: #000000;
         }
+
+        &--active {
+            color: #0cb0ff;
+        }
+    }
+
+    &__inner-list &__link {
+        &:hover {
+            color: #ffffff;
+        }
+
+        &:active {
+            color: #0cb0ff;
+        }
+    }
+    
+    &__inner-list &__link--active {
+        color: #ffffff;
     }
 
     &__dropdown-arrow {
@@ -209,8 +229,41 @@ body {
     .nav {
         flex-direction: column-reverse;
         height: auto;
+        padding-bottom: 0;
         &__dropdown-arrow {
             display: none;
+        }
+        &__list {
+            flex-grow: 0;
+            display: flex;
+            flex-direction: row;
+        }
+        &__item {
+            padding: 2rem 0;
+        }
+        &__link {
+            padding: 2rem 1rem;
+        }
+        &__item:hover &__inner-list {
+            display: block;
+            position: absolute;
+            left: 50%;
+            text-align: center;
+            padding: .5rem;
+            top: 100%;
+            background-color: #5e646b;
+            color: #b3b3b3;
+            transform: translateX(-50%);
+        }
+        &__item:hover &__inner-item {
+            text-align: center;
+            text-align: left;
+            padding: .5rem 1rem;
+            margin-left: 0;
+            width: 250px;
+        }
+        &__item:hover &__inner-list &__link {
+            padding: .5rem 1rem;
         }
         &__contact-info {
             display: flex;
@@ -247,19 +300,10 @@ body {
             justify-content: space-between;
             width: 100%;
             max-width: 1400px;
-            padding: 1rem;
             margin: 0 auto;
         }
-        &__list {
-            flex-grow: 0;
-            display: flex;
-            flex-direction: row;
-        }
-        &__item {
-            margin-left: 2rem;
-            &:first-child {
-                margin-left: 0;
-            }
+        &__header {
+            padding: 1rem;
         }
     }
 }

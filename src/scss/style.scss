@@ -644,7 +644,7 @@ body {
         background: #01486b;
 
         & .services__item-title {
-            color: #007ebe;
+            color: #0cb0ff;
         }
     }
 
@@ -684,7 +684,7 @@ body {
         &__item:nth-child(4n+3) {
             background: #01486b;
             & .services__item-title {
-                color: #007ebe;
+                color: #0cb0ff;
             }
         }
     }
@@ -892,7 +892,7 @@ body {
 
         & .section {
             &__title {
-                color: #007ebe;
+                color: #0cb0ff;
             }
         }
     }
@@ -1435,7 +1435,6 @@ body {
     &__list {
         text-align: left;
         list-style: inside disc;
-        color: #01486b;
     }
 
     &__item {
@@ -1443,7 +1442,6 @@ body {
     }
 
     &__emphasis {
-        color: #01486b;
         font-weight: bold;
     }
 

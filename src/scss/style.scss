@@ -129,11 +129,11 @@ body {
 
     &__inner-list &__link {
         &:hover {
-            color: #ffffff;
+            color: #0cb0ff;
         }
 
         &:active {
-            color: #0cb0ff;
+            color: #000000;
         }
     }
     
@@ -243,6 +243,15 @@ body {
         }
         &__link {
             padding: 2rem 1rem;
+        }
+        &__inner-list &__link {
+            &:hover {
+                color: #ffffff;
+            }
+    
+            &:active {
+                color: #0cb0ff;
+            }
         }
         &__item:hover &__inner-list {
             display: block;

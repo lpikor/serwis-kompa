@@ -821,6 +821,10 @@ body {
 
 @media (min-width: 768px) {
     .features {
+        &__outer-container {
+            width: 100%;
+            max-width: 1400px;
+        }
         &__container{
             display: flex;
             flex-direction: column;
@@ -828,7 +832,9 @@ body {
             text-align: left;
             max-width: 450px;
             padding: 0 7rem 0 4rem;
-            margin-right: calc(15vw - 3rem);
+            // margin-right: calc(15vw - 3rem);
+            margin-right: 0;
+            margin-left: auto;
             height: 800px;
         }
         &__btn {

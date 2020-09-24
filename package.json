@@ -7,7 +7,7 @@
     "html": "rm -rf css images js *.html && cp src/*.html dist",
     "scss": "node-sass src/scss/ -o dist/css/ --output-style compressed",
     "autoprefixer": "postcss dist/css/ -u autoprefixer -r",
-    "images": "rm -rf dist\\images && mkdir dist\\images && cp -r src/images/* dist/images/",
+    "images": "rm -rf dist\\images && mkdir dist\\images && imagemin src/images/**/* --plugin=webp --out-dir=dist/images",
     "js": "rm -rf dist\\js && mkdir dist\\js && cp src\\js\\index.js dist\\js\\index.js",
     "server": "cd dist && live-server",
     "build:html": "npm run html",
@@ -32,7 +32,7 @@
   "homepage": "https://github.com/lpikor/serwis-kompa#readme",
   "devDependencies": {
     "autoprefixer": "^9.8.6",
-    "imagemin": "^7.0.1",
+    "imagemin-cli": "^6.0.0",
     "imagemin-webp": "^6.0.0",
     "live-server": "^1.2.1",
     "node-sass": "^4.14.1",

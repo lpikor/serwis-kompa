@@ -438,59 +438,59 @@ body {
     }
 
     &--main::before {
-        background-image: url('../images/Slider/Strona-glowna.jpg');
+        background-image: url('../images/strona-glowna.webp');
     }
 
     &-serwis-komputerowy::before {
-        background-image: url('../images/Slider/Serwis-komputerowy.jpg');
+        background-image: url('../images/serwis-komputerowy.webp');
     }
 
     &-uslugi::before {
-        background-image: url('../images/Slider/Nasze-uslugi.jpg');
+        background-image: url('../images/nasze-uslugi.webp');
     }
 
     &-monitoring::before {
-        background-image: url('../images/Slider/Monitoring.jpg');
+        background-image: url('../images/monitoring.webp');
     }
 
     &-instalacje-antenowe::before {
-        background-image: url('../images/Slider/Instalacje-antenowe.jpg');
+        background-image: url('../images/instalacje-antenowe.webp');
     }
 
     &-o-nas::before {
-        background-image: url('../images/Slider/O-nas.jpg');
+        background-image: url('../images/o-nas.webp');
     }
 
     &-dla-klienta::before {
-        background-image: url('../images/Slider/Dla-klienta.jpg');
+        background-image: url('../images/dla-klienta.webp');
     }
 
     &-cennik::before {
-        background-image: url('../images/Slider/Cennik.jpg');
+        background-image: url('../images/cennik.webp');
     }
 
     &-referencje::before {
-        background-image: url('../images/Slider/Referencje.jpg');
+        background-image: url('../images/referencje.webp');
     }
 
     &-newsy::before {
-        background-image: url('../images/Slider/Newsy.jpg');
+        background-image: url('../images/newsy.webp');
     }
 
     &-programy-dla-firm::before {
-        background-image: url('../images/Slider/Programy-dla-firm.jpg');
+        background-image: url('../images/programy-dla-firm.webp');
     }
 
     &-faktura-ibiznes::before {
-        background-image: url('../images/Slider/Programy-dla-firm.jpg');
+        background-image: url('../images/programy-dla-firm.webp');
     }
 
     &-regulamin::before {
-        background-image: url('../images/Slider/Regulamin.jpg');
+        background-image: url('../images/regulamin.webp');
     }
 
     &-kontakt::before {
-        background-image: url('../images/Slider/Kontakt.jpg');
+        background-image: url('../images/kontakt.webp');
     }
 
     &__title {
@@ -791,7 +791,7 @@ body {
         left: 0;
         height: 100%;
         width: 100%;
-        background-image: url('../images/Strona-glowna/Features-banner.png');
+        background-image: url('../images/features-banner.webp');
         background-size: cover;
         z-index: -2;
     }
@@ -1052,34 +1052,34 @@ body {
             background-position: 50% 50%;
             background-size: cover;
             &-1 {
-                background-image: url('../images/Uslugi-serwis-komputerowy/1.jpg');
+                background-image: url('../images/fixing-cables.webp');
             }
             &-2 {
-                background-image: url('../images/Uslugi-serwis-komputerowy/2.jpg');
+                background-image: url('../images/fixing-motherboard.webp');
             }
             &-3 {
-                background-image: url('../images/Uslugi-serwis-komputerowy/3.jpg');
+                background-image: url('../images/fixing-phone.webp');
             }
             &-4 {
-                background-image: url('../images/Uslugi-monitoring/3.jpg');
+                background-image: url('../images/monitoring-3.webp');
             }
             &-5 {
-                background-image: url('../images/Uslugi-monitoring/2.jpg');
+                background-image: url('../images/monitoring-2.webp');
             }
             &-6 {
-                background-image: url('../images/Uslugi-monitoring/1.jpg');
+                background-image: url('../images/monitoring-1.webp');
             }
             &-7 {
-                background-image: url('../images/Uslugi-telewizja/1.jpg');
+                background-image: url('../images/satellite.webp');
             }
             &-8 {
-                background-image: url('../images/Uslugi-telewizja/3.jpg');
+                background-image: url('../images/family-fish.webp');
             }
             &-9 {
-                background-image: url('../images/O-nas/1.jpg');
+                background-image: url('../images/chipset.webp');
             }
             &-10 {
-                background-image: url('../images/O-nas/2.jpg');
+                background-image: url('../images/laptop-fixing.webp');
             }
         }
         &__content {

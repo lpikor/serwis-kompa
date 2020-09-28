@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "html": "rm -rf css images js *.html && cp src/*.html dist",
+    "html": "rm -rf css images js *.html favicon.ico && cp src/*.html dist && cp src/favicon.ico dist",
     "scss": "node-sass src/scss/ -o dist/css/ --output-style compressed",
     "autoprefixer": "postcss dist/css/ -u autoprefixer -r",
     "images": "rm -rf dist\\images && mkdir dist\\images && imagemin src/images/**/* --plugin=webp --out-dir=dist/images",
